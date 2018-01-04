@@ -5,12 +5,14 @@
       "useBuiltIns": true
     }],
     "stage-0",
+    "flow",
     "react"
   ],
   "plugins": ["add-module-exports", "dynamic-import-webpack"],
   "env": {
     "production": {
       "presets": ["react-optimize"],
+      "presets": ["minify"],
       "plugins": ["babel-plugin-dev-expression"]
     },
     "development": {
